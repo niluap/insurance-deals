@@ -1,0 +1,47 @@
+@import "./styles/navigation-bar.scss";
+@import "./styles/variables.scss";
+
+
+body{
+  background-color: $blue;
+}
+.App {
+  // text-align: center;
+  // background-color: $paulia;
+
+  // @media #{$at-least-medium} {
+  //   background-color: $michi;
+  // }
+
+  // &:hover {
+    
+  // }
+
+  // @include winko();
+  font-size:16px;
+  
+   
+}
+.single-element-menu{
+   background-color: white;
+   
+  width:8em;
+  height: 8em;
+
+  border-radius:1em;
+  text-align: center;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12);
+  margin-bottom:1em;
+}
+
+.double-element-menu{
+  margin-right: 2em;
+
+}
+
+.box-menu{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
