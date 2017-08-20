@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+.ReactFlipCard__Front, .ReactFlipCard__Back {
+    transition: 0.8s;
+}
+
+.ReactFlipCard__Front{
+    position: static;
+}
+
+.ReactFlipCard__Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10em;
+}
+
+.single-element-menu-front{
+    background-color: white;
+   
+    width:8em;
+    height: 10em;
+
+    border-radius:1em;
+    text-align: center;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12);
+    margin-bottom:1em;
+}
+
+.single-element-menu-back{
+    background-color: $green;
+    color: white;
+
+    width: 8em;
+    height: 100%;
+    position: absolute;
+   
+
+    border-radius:1em;
+    text-align: center;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12);
+    margin-bottom:1em;
+}
+
+.double-element-menu{
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}

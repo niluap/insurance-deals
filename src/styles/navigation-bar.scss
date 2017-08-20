@@ -1,2 +1,78 @@
 @import "variables.scss";
 
+.navigation-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $white-font;
+}
+
+.navigation-bar div{
+padding-top: $indent-md;
+max-width: 33%;
+}
+
+.navigation-bar :nth-child(2), .navigation-bar :nth-child(3) {
+padding-top: $indent-lg;
+    
+} 
+
+.navigation-bar-logo{
+    font-weight: $heavy-weight;
+    font-size:1.5em;
+    line-height: 1;
+}
+
+.navigation-bar-in-touch span{
+    margin-left: $indent-md;
+    margin-right: $indent-md;
+    position: relative;
+    text-decoration: none;
+}
+
+.navigation-bar-in-touch span:hover{
+    cursor: pointer;
+}
+
+.navigation-bar-in-touch span::before{
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navigation-bar-in-touch span:hover::before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navigation-bar-contact-number{
+    padding-right: $indent-lg;
+    font-weight: $heavy-weight;
+}
+
+.get-quote-now-button{
+    background-color: $green;
+    border: 2px solid $green;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 3em;
+    color: white;
+    font-weight: $heavy-weight;
+}
+@media(min-width:801px){
+    .navigation-bar-small{
+            display: none;
+    }
+};
+
+@media(max-width:800px){
+    .navigation-bar{
+            display: none;
+    }
+}

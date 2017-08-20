@@ -1,11 +1,25 @@
 $blue: rgb(0,129,255);
 $green:rgb(1,236,152);
 
+$white-font:white;
+$blue-font:  rgb(0,129,255);
+
+$max-page-width:1000px;
+
+$row-indent:4em;
+$row-indent-small-devices:2em;
+
+
+
 $indent-xs: 0.2em;
 $indent-sm: 0.5em;
 $indent-md: 1.0em;
 $indent-lg: 2.0em;
 $indent-xl: 4.0em;
+
+$light-weight:400;
+$medium-weight:500;
+$heavy-weight:700;
 
 /****
 $at-least-medium: "only screen and (min-width: 700px)";
