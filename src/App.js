@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FlipCard from 'react-flipcard';
+import phone from './images/phone_white.svg';
 
 
 const NavigationBar= () => (
@@ -20,24 +21,27 @@ const NavigationBar= () => (
       </div>
       <div>
         <span className='navigation-bar-contact-number'>
-          1890 876 077
+          <img src={phone} alt="phone" className="phone-navbar"/>1890 876 077
         </span>
-        <span className='naviagtion-bar-quote-button'>
-          <button className='get-quote-now-button'>GET QUOTE NOW</button>
-        </span>  
+       </div>
+       <div> 
+          <span className='naviagtion-bar-quote-button'>
+           <button className='get-quote-now-button'>GET QUOTE NOW</button>
+          </span>
       </div>  
-    </div>
-   </div> 
+     </div>  
+  </div>
+    
 );
 
 const SingleElementMenu = (props) => (
   <FlipCard type="vertical" >
     <div className="single-element-menu-front">
       <img src={logo} alt="single-element-logo" className="single-element-logo"/>
-      <h4>{props.heading}</h4>
+      <h2>{props.heading}</h2>
     </div> 
     <div className="single-element-menu-back">
-      <h4>GET QUOTE NOW</h4>
+      <h1>GET QUOTE NOW</h1>
     </div> 
   </FlipCard>
 );
@@ -63,21 +67,23 @@ const BoxMenu = ({Data}) => {
 );
    
   return (
-   <div className="box-menu">
-  {list}
-    </div> 
+  <div className="row">  
+    <div className="box-menu">
+        {list}
+    </div>
+  </div>   
 );
 }
 
 const BoxMenuData = [
-  { image: logo, heading: 'Heading1' },
-  { image: logo, heading: 'Heading2' },
-  { image: logo, heading: 'Heading3' },
-  { image: logo, heading: 'Heading4' },
-  { image: logo, heading: 'Heading5' },
-  { image: logo, heading: 'Heading6' },
-  { image: logo, heading: 'Heading7' },
-  { image: logo, heading: 'Heading8' }, 
+  { image: logo, heading: 'Life Assurance' },
+  { image: logo, heading: 'Commercial Cover' },
+  { image: logo, heading: 'Commercial Motor Insurance' },
+  { image: logo, heading: 'Income Protection' },
+  { image: logo, heading: 'Health Insurance' },
+  { image: logo, heading: 'Pension Advice' },
+  { image: logo, heading: 'Home Insurance' },
+  { image: logo, heading: 'Travel Cover' }, 
 ]
 
 class App extends Component {

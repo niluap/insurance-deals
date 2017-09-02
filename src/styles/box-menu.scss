@@ -12,26 +12,32 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 10em;
+    height: 15em;
 }
 
 .single-element-menu-front{
     background-color: white;
    
-    width:8em;
-    height: 10em;
+    width:15em;
+    height: 15em;
 
     border-radius:1em;
     text-align: center;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12);
-    margin-bottom:1em;
+    margin-bottom:2em;
+}
+
+.single-element-menu-front h2{
+    margin: 0.8em 0.8em 0 0.8em;
+    padding-bottom: 2em;
+    
 }
 
 .single-element-menu-back{
     background-color: $green;
     color: white;
 
-    width: 8em;
+    width: 15em;
     height: 100%;
     position: absolute;
    
@@ -39,19 +45,21 @@
     border-radius:1em;
     text-align: center;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12);
-    margin-bottom:1em;
+    margin-bottom:2em;
+}
+
+.single-element-menu-back h1{
+    padding-top: 1.5em;
 }
 
 .double-element-menu{
-    margin-right: 2em;
+    margin: 0 1em 0 1em;
     display: flex;
     flex-direction: column;
-
 }
 
 .box-menu{
     display:flex;
     flex-direction: row;
     justify-content: center;
-
 }
