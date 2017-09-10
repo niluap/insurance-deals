@@ -51,7 +51,6 @@ max-width: 33%;
 }
 
 .navigation-bar-contact-number{
-    padding-right: $indent-lg;
     font-weight: $heavy-weight;
     font-size:1.5em;
     line-height: 1;
@@ -71,16 +70,47 @@ max-width: 33%;
     border-radius: 3em;
     color: white;
     font-weight: $heavy-weight;
-    font-size: 0.9em;
+    font-size: $font-nm;
 }
 
 .get-quote-now-button:hover{
     cursor: pointer;
 }
 
+
 /**************************/
 /*******MEDIA-QUERY********/
 /**************************/
+
+@media(max-width:1150px){
+    .navigation-bar-contact-number{
+        font-size:1.2em;
+}
+    .get-quote-now-button{
+       font-size: $font-xs; 
+    }
+    .navigation-bar-in-touch span{
+        font-size: $font-nm;
+    }
+};
+
+@media(min-width:951px){
+    .navigation-bar-in-touch-mid-devices{
+        display: none;
+}
+};
+
+@media(max-width:950px){
+    .navigation-bar-in-touch{
+            display: none;
+    }
+    .navigation-bar-in-touch-mid-devices{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }   
+};
+
 
 @media(min-width:801px){
     .navigation-bar-small{
